@@ -3,6 +3,5 @@ def Square_Of_Numbers():
     print(str(num) + " squared is " + str(num ** 2)) # num * num is equivalent to num ** 2. The ** operator raises something to a power!
 
 
-
 if __name__ == '__main__':
     Square_Of_Numbers()
