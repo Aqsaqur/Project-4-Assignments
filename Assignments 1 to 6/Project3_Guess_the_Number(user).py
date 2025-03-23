@@ -1,10 +1,12 @@
 import random
 
 def computer_guess(x):
+    print("Welcome to Guess the Number Game where computer will guess your number and  will have 3 lives ")
     low = 1
     high = x
     feedback = '' 
-    while feedback != 'c':
+    lives = 3
+    while feedback != 'c' and lives > 0:
         if low != high:
             guess = random.randint(low, high)
         else:
@@ -14,6 +16,14 @@ def computer_guess(x):
             high = guess -1
         elif feedback == 'l':
             low = guess + 1
-    print(f'Congrats! The computer guessed your number, {guess}, correctly!')
+
+        lives -= 1 # Decrease a life with each attempt
+        print(f"Lives remaining: {lives}")
+
+    if feedback == 'c':
+        print(f'Congrats! The computer guessed your number, {guess}, correctly!')
+    else:
+        print("The computer ran out of lives! You win.")
+
 
 computer_guess(10)
