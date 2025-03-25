@@ -4,7 +4,7 @@ def Guess(x):
     random_number = random.randint(1, x)
     guess = 0
     lives = 3
-    while guess !=random_number and lives:
+    while guess != random_number and lives:
         guess = int(input(f"Guess the Number between 1 to {x}: "))
         if guess < random_number:
             print("Too Low, Guess Again")
