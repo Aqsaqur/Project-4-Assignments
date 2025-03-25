@@ -17,3 +17,25 @@ def Age_Guessing():
 if __name__ == '__main__':
     Age_Guessing()
 
+""" pseudocode for your Age Guessing program:
+FUNCTION Age_Guessing():
+    // Define ages of five people
+    anton ← 21  
+    beth ← 6 + anton  
+    chen ← 20 + beth  
+    drew ← chen + anton  
+    ethan ← chen  
+
+    // Display all the ages
+    DISPLAY "Anton is ", anton
+    DISPLAY "Beth is ", beth
+    DISPLAY "Chen is ", chen
+    DISPLAY "Drew is ", drew
+    DISPLAY "Ethan is ", ethan
+END FUNCTION
+
+// Main program execution
+IF main program is running THEN
+    CALL Age_Guessing()
+END IF
+"""
